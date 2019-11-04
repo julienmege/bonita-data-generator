@@ -27,8 +27,11 @@ class PublishDailyMealProcess {
     def resolveCase(long userId, long processInstanceId) {
         apiAccessor.getProcessAPI().assignAndExecuteUserTask(userId, taskId(apiAccessor,processInstanceId, 'Close'), null)
     }
+	
+	def invloveUser(long userId, long processInstanceId) {
+		apiAccessor.getProcessAPI().assignAndExecuteUserTask(userId, taskId(apiAccessor,processInstanceId, 'InvolveUser'), null)
+	}
   
-
     def long taskId(APIAccessor apiAccessor, long processInstanceId, String taskName) {
         long taskId = -1
         loop {

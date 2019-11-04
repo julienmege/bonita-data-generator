@@ -53,6 +53,7 @@ class ScenarioExecutor {
 			vegasRequest.resolveCase(getUserId(apiAccessor, "walter.bates"), processInstanceId)
 			
 			processInstanceId = publishDailyMeal.startCase(getUserId(apiAccessor, "walter.bates"), "1.0")
+			publishDailyMeal.invloveUser(getUserId(apiAccessor, "walter.bates"), processInstanceId)
 			publishDailyMeal.resolveCase(getUserId(apiAccessor, "walter.bates"), processInstanceId)
 	
 		}
