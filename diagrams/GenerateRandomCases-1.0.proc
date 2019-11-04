@@ -378,7 +378,7 @@
         <value xmi:type="expression:Expression" xmi:id="_6lD1bvpREemOzr5hOr4ANg" content="" returnTypeFixed="true"/>
       </searchIndexes>
     </elements>
-    <elements xmi:type="process:Pool" xmi:id="_RTMIQPpUEemOzr5hOr4ANg" name="Vegas" version="2.0" displayName="New refund request">
+    <elements xmi:type="process:Pool" xmi:id="_RTMIQPpUEemOzr5hOr4ANg" name="Vegas" version="2.0" displayName="">
       <elements xmi:type="process:StartEvent" xmi:id="_anyDoPpVEemOzr5hOr4ANg" name="Start3" outgoing="_WEnO4PpfEemOzr5hOr4ANg">
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_anzRwfpVEemOzr5hOr4ANg" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_anzRwPpVEemOzr5hOr4ANg" name="" content="" returnTypeFixed="true"/>
