@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_swSlMPllEemh67NNS089Og" name="GenerateRandomCases" author="bonitasoft" bonitaVersion="7.10.0" bonitaModelVersion="7.10.0-001" configId="ACED000574002547656E657261746552616E646F6D4361736573372E31302E302D303031372E31302E307370">
+  <process:MainProcess xmi:id="_swSlMPllEemh67NNS089Og" name="GenerateRandomCases" author="bonitasoft" bonitaVersion="7.11.0" bonitaModelVersion="7.10.0-001" configId="ACED000574002547656E657261746552616E646F6D4361736573372E31302E302D303031372E31312E307370">
     <elements xmi:type="process:Pool" xmi:id="_swSlMfllEemh67NNS089Og" name="generateRandomCases">
       <elements xmi:type="process:Lane" xmi:id="_swSlMvllEemh67NNS089Og" name="Employé (lane)" actor="_swSlS_llEemh67NNS089Og">
         <elements xmi:type="process:StartEvent" xmi:id="_swSlM_llEemh67NNS089Og" name="Démarrer1" outgoing="_swSlSPllEemh67NNS089Og">
@@ -72,10 +72,22 @@
           </children>
         </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ixSeE_loEemh67NNS089Og" id="DATA_TYPES"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ixSeFPloEemh67NNS089Og" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ixSeFPloEemh67NNS089Og" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pujHYBsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/ScenarioExecutor.groovy" value="com/bonitasoft/generate/cases/scenario/ScenarioExecutor.groovy" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pujHYRsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/Condition.groovy" value="com/bonitasoft/generate/cases/scenario/process/Condition.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pujHYhsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/PublishDailyMealProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/PublishDailyMealProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pujHYxsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/VacationRequestProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/VacationRequestProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pujHZBsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/VegasProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/VegasProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+        </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ixSeFfloEemh67NNS089Og" id="OTHER"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ixSeFvloEemh67NNS089Og" id="DATA_TYPES"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ixSeF_loEemh67NNS089Og" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ixSeF_loEemh67NNS089Og" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pujHZRsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/ScenarioExecutor.groovy" value="com/bonitasoft/generate/cases/scenario/ScenarioExecutor.groovy" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pujHZhsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/Condition.groovy" value="com/bonitasoft/generate/cases/scenario/process/Condition.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pujHZxsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/PublishDailyMealProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/PublishDailyMealProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pujHaBsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/VacationRequestProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/VacationRequestProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pujHaRsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/VegasProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/VegasProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+        </applicationDependencies>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ixSeGPloEemh67NNS089Og" id="OTHER"/>
       </configurations>
       <contract xmi:type="process:Contract" xmi:id="_swSlTPllEemh67NNS089Og"/>
@@ -116,7 +128,7 @@
         <iteratorExpression xmi:type="expression:Expression" xmi:id="_rwFZqPpbEemOzr5hOr4ANg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
         <completionCondition xmi:type="expression:Expression" xmi:id="_rwFZp_pbEemOzr5hOr4ANg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <formMapping xmi:type="process:FormMapping" xmi:id="_uTB3ifpbEemOzr5hOr4ANg">
-          <targetForm xmi:type="expression:Expression" xmi:id="_M_MDcP7pEem9u_7o_by2jQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          <targetForm xmi:type="expression:Expression" xmi:id="_JkfIwBslEeqtDrKs7PXAoA" name="vacationRequestExecuteTask" content="3f9de473-8bbc-45d5-9fa1-faa72ac64770" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
         </formMapping>
         <contract xmi:type="process:Contract" xmi:id="_uTB3iPpbEemOzr5hOr4ANg"/>
         <expectedDuration xmi:type="expression:Expression" xmi:id="_uTB3i_pbEemOzr5hOr4ANg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -125,14 +137,14 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_3e6R8fmPEemh67NNS089Og" content=""/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_I7Swf_loEemh67NNS089Og" type="NONE">
-        <targetForm xmi:type="expression:Expression" xmi:id="_HjRegPlxEemh67NNS089Og" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_zW798BsjEeqtDrKs7PXAoA" name="newForm" content="ef257a99-9fc4-49fc-8dfa-a72b2cccf983" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_I7SwgfloEemh67NNS089Og">
         <targetForm xmi:type="expression:Expression" xmi:id="_I7SwgvloEemh67NNS089Og" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_rwH14PpbEemOzr5hOr4ANg" target="_uTBQcPpbEemOzr5hOr4ANg" source="_DUp9oPmgEemh67NNS089Og">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_rwH14fpbEemOzr5hOr4ANg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_rwH14vpbEemOzr5hOr4ANg" name="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_rwH14vpbEemOzr5hOr4ANg" name="" content="" type="TYPE_CONDITION" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_wb-w0PmGEemh67NNS089Og" name="Acteur1" initiator="true"/>
       <configurations xmi:type="configuration:Configuration" xmi:id="_ipw5wPloEemh67NNS089Og" name="Development" version="7.10.0-001" username="walter.bates" password="bpm">
@@ -149,10 +161,22 @@
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ipw5wfloEemh67NNS089Og" id="ACTOR_FILTER"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ipw5wvloEemh67NNS089Og" id="CONNECTOR"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ipw5w_loEemh67NNS089Og" id="DATA_TYPES"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ipw5xPloEemh67NNS089Og" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ipw5xPloEemh67NNS089Og" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_puk8kBsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/ScenarioExecutor.groovy" value="com/bonitasoft/generate/cases/scenario/ScenarioExecutor.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_puk8kRsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/Condition.groovy" value="com/bonitasoft/generate/cases/scenario/process/Condition.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_puk8khsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/PublishDailyMealProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/PublishDailyMealProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_puk8kxsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/VacationRequestProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/VacationRequestProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_puk8lBsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/VegasProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/VegasProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+        </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ipw5xfloEemh67NNS089Og" id="OTHER"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ipw5xvloEemh67NNS089Og" id="DATA_TYPES"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ipw5x_loEemh67NNS089Og" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ipw5x_loEemh67NNS089Og" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_puk8lRsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/ScenarioExecutor.groovy" value="com/bonitasoft/generate/cases/scenario/ScenarioExecutor.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_puk8lhsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/Condition.groovy" value="com/bonitasoft/generate/cases/scenario/process/Condition.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_puk8lxsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/PublishDailyMealProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/PublishDailyMealProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_puk8mBsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/VacationRequestProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/VacationRequestProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_puk8mRsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/VegasProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/VegasProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+        </applicationDependencies>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_ipw5yPloEemh67NNS089Og" id="OTHER"/>
       </configurations>
       <contract xmi:type="process:Contract" xmi:id="_I7Swg_loEemh67NNS089Og"/>
@@ -242,10 +266,22 @@
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_iwqL8floEemh67NNS089Og" id="ACTOR_FILTER"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_iwqL8vloEemh67NNS089Og" id="CONNECTOR"/>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_iwqL8_loEemh67NNS089Og" id="DATA_TYPES"/>
-        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_iwqL9PloEemh67NNS089Og" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_iwqL9PloEemh67NNS089Og" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pumxwBsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/ScenarioExecutor.groovy" value="com/bonitasoft/generate/cases/scenario/ScenarioExecutor.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pumxwRsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/Condition.groovy" value="com/bonitasoft/generate/cases/scenario/process/Condition.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pumxwhsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/PublishDailyMealProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/PublishDailyMealProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pumxwxsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/VacationRequestProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/VacationRequestProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pumxxBsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/VegasProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/VegasProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+        </processDependencies>
         <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_iwqL9floEemh67NNS089Og" id="OTHER"/>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_iwqL9vloEemh67NNS089Og" id="DATA_TYPES"/>
-        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_iwqL9_loEemh67NNS089Og" id="GROOVY_SCRIPT"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_iwqL9_loEemh67NNS089Og" id="GROOVY_SCRIPT">
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pumxxRsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/ScenarioExecutor.groovy" value="com/bonitasoft/generate/cases/scenario/ScenarioExecutor.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pumxxhsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/Condition.groovy" value="com/bonitasoft/generate/cases/scenario/process/Condition.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pumxxxsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/PublishDailyMealProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/PublishDailyMealProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pumxyBsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/VacationRequestProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/VacationRequestProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+          <fragments xmi:type="configuration:Fragment" xmi:id="_pumxyRsjEeqtDrKs7PXAoA" key="com/bonitasoft/generate/cases/scenario/process/VegasProcess.groovy" value="com/bonitasoft/generate/cases/scenario/process/VegasProcess.groovy" exported="false" type="GROOVY_SCRIPT"/>
+        </applicationDependencies>
         <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_iwqL-PloEemh67NNS089Og" id="OTHER"/>
       </configurations>
       <contract xmi:type="process:Contract" xmi:id="_aDY55PloEemh67NNS089Og"/>
