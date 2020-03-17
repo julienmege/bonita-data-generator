@@ -3,6 +3,9 @@ package com.bonitasoft.generate.cases.scenario
 
 import java.util.concurrent.ThreadLocalRandom
 
+import org.bonitasoft.engine.bpm.flownode.FlowNodeInstanceSearchDescriptor
+import org.bonitasoft.engine.search.SearchOptionsBuilder
+
 import com.bonitasoft.engine.api.APIAccessor
 import com.bonitasoft.generate.cases.scenario.process.PublishDailyMealProcess
 import com.bonitasoft.generate.cases.scenario.process.VacationRequestProcess
@@ -29,6 +32,8 @@ class ScenarioExecutor {
 			processInstanceId = vacationRequest.startCase(getUserId(apiAccessor, "helen.kelly.veryveryveryverylongusername"), "2.0")
 			vacationRequest.invloveUser(getUserId(apiAccessor, "walter.bates"), processInstanceId)
 			vacationRequest.startCase(getUserId(apiAccessor, "walter.bates"), "3.0")
+			vacationRequest.startCase(getUserId(apiAccessor, "walter.bates"), "4.0")
+			vacationRequest.startCase(getUserId(apiAccessor, "walter.bates"), "5.0")
 			vegasRequest.startCase(getUserId(apiAccessor, "walter.bates"), "1.0") 
 			processInstanceId = vegasRequest.startCase(getUserId(apiAccessor, "helen.kelly.veryveryveryverylongusername"), "2.0")
 			vegasRequest.invloveUser(getUserId(apiAccessor, "walter.bates"), processInstanceId)
@@ -64,5 +69,6 @@ class ScenarioExecutor {
     def long getUserId(APIAccessor apiAccessor, String username) {
         apiAccessor.getIdentityAPI().getUserByUserName(username).id
     }
+	
 
 }
