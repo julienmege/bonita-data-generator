@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="adminApp" version="1.0" profile="Administrator" homePage="admin-process-list" state="ACTIVATED" layout="custompage_BonitaLayoutV5" theme="custompage_themeBonita">
+        <displayName>Bonita Admin Application</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_userDetailsBonita" token="admin-user-details"/>
+            <applicationPage customPage="custompage_adminProcessDetailsBonita" token="admin-process-details"/>
+            <applicationPage customPage="custompage_adminProcessVisuBonita" token="admin-process-visualization"/>
+            <applicationPage customPage="custompage_adminCaseVisuBonita" token="admin-case-visualization"/>
+            <applicationPage customPage="custompage_adminCaseDetailsBonita" token="admin-case-details"/>
+            <applicationPage customPage="custompage_AdminProcessListBonitaV1" token="admin-process-list"/>
+            <applicationPage customPage="custompage_adminCaseListBonita" token="admin-case-list"/>
+            <applicationPage customPage="custompage_AdminTaskListBonitaV1" token="admin-task-list"/>
+            <applicationPage customPage="custompage_UserListBonitaV1" token="user-list"/>
+            <applicationPage customPage="custompage_installExportOrganizationBonita" token="install-export-organization"/>
+            <applicationPage customPage="custompage_ResourcesListBonitaV1" token="resource-list"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu>
+                <displayName>BPM</displayName>
+                <applicationMenus>
+                    <applicationMenu applicationPage="admin-process-list">
+                        <displayName>Processes</displayName>
+                    </applicationMenu>
+                    <applicationMenu applicationPage="admin-case-list">
+                        <displayName>Cases</displayName>
+                    </applicationMenu>
+                    <applicationMenu applicationPage="admin-task-list">
+                        <displayName>Tasks</displayName>
+                    </applicationMenu>
+                </applicationMenus>
+            </applicationMenu>
+            <applicationMenu>
+                <displayName>Organization</displayName>
+                <applicationMenus>
+                    <applicationMenu applicationPage="user-list">
+                        <displayName>Users</displayName>
+                    </applicationMenu>
+                    <applicationMenu applicationPage="install-export-organization">
+                        <displayName>Install / Export</displayName>
+                    </applicationMenu>
+                </applicationMenus>
+            </applicationMenu>
+            <applicationMenu applicationPage="resource-list">
+                <displayName>Resources</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>
